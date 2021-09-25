@@ -4,3 +4,5 @@
     url: http://34.209.89.72:8082/artifactory/myUATrepo/com/maha/mahaLogin/6.0/mahaLogin-6.0.war
     dest: /opt/tomcat/webapps/mahaLogin-6.0.war
     force_basic_auth: yes
+    url_username: admin
+    url_password: Suresh123!

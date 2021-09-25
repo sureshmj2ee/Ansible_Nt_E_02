@@ -1,0 +1,6 @@
+---
+- name: deploy java app
+  get_url:
+    url: 
+    dest: 
+    force_basic_auth: yes

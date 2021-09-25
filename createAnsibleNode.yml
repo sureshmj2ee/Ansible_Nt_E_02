@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes
+    ec2:
+      key_name: myOregonkey
+      instance_type: t2.micro
+      image: ami-0969b674cef727f22
+      wait: yes
+      group: Ansible
+      count: 2
+      region: us-west-2
+      vpc_subnet_id: subnet-69ac1611
+      assign_public_ip: yes
+      instance_tags:
+        Name: AnsibleUbuntuNodes

@@ -1,0 +1,19 @@
+---
+- mystudents: 
+  - name: amith
+    phno:  8888888888
+    email: amith@gmail.com
+    address: 
+      - streetno: 01
+      - doorno:  45454
+      - pincode:  77777777
+
+  - name: krishna
+    phno: 77777777777
+    email: krishna@gmail.com
+    address: hyd
+
+  - name: naga
+    phno: 766666666666
+    email: naga@gmail.com
+    address: hyd

@@ -1,0 +1,16 @@
+---
+- hosts: 172.31.22.167
+  become: yes
+  vars:
+    myvar1: git
+    myvar2: tree
+  
+  tasks:
+  - name:  disply myvar1
+    debug:
+      msg: "{{myvar1}}"
+
+  - name: install git
+    apt:
+      name: "{{myvar1}}"
+      state: present

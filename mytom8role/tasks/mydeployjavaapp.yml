@@ -1,0 +1,12 @@
+---
+- name: deploy jankins as java application
+  get_url:
+    url: https://get.jenkins.io/war-stable/2.289.1/jenkins.war
+    dest: /opt/tomcat/webapps/jenkins.war
+    force_basic_auth: yes
+
+- name: deploy mahalogin as java application
+  get_url:
+    url: https://maha4aws.s3.us-east-2.amazonaws.com/mahaLogin.war
+    dest: /opt/tomcat/webapps/mahaLogin.war
+    force_basic_auth: yes
